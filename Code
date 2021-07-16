@@ -1,0 +1,18 @@
+import random
+
+# upper and lower bounds
+lower = 1
+upper = 6
+
+def rollagain():
+    answer = input("Enter to roll again: ").lower()
+    if answer.lower() == "":
+        roll1()
+    else:
+        exit()
+
+def roll1():
+    print(random.randint(lower, upper))
+    rollagain()
+
+RollDice = roll1()
